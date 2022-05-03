@@ -1,33 +1,33 @@
 <h1 style="text-align: center;">
-    Register Page
+    Tilmeld Bruger
 </h1>
 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" novalidate>
     <div class="container">
         <mat-form-field>
-            <input matInput placeholder="Full Name" formControlName="name">
-            <mat-hint *ngIf="registerForm.get('name').errors">Full name is required</mat-hint>
+            <input matInput placeholder="Fuldt navn" formControlName="name">
+            <mat-hint *ngIf="registerForm.get('name').errors">Fuldt navn er påkrævet</mat-hint>
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="Username" formControlName="username">
-            <mat-hint *ngIf="registerForm.get('username').errors">Username is required</mat-hint>
+            <input matInput placeholder="Brugernavn" formControlName="username">
+            <mat-hint *ngIf="registerForm.get('username').errors">Brugernavn er påkrævet</mat-hint>
         </mat-form-field>
 
         <mat-form-field>
             <input matInput placeholder="Email" formControlName="email">
-            <mat-hint *ngIf="registerForm.get('email').errors">Email is required</mat-hint>
+            <mat-hint *ngIf="registerForm.get('email').errors">Email er påkrævet</mat-hint>
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput type="password" placeholder="Password" formControlName="password">
-            <mat-hint *ngIf="registerForm.get('password').errors">Password is required</mat-hint>
+            <input matInput type="password" placeholder="Adgangskode" formControlName="password">
+            <mat-hint *ngIf="registerForm.get('password').errors">Adgangskode er påkrævet</mat-hint>
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput type="password" placeholder="Password COnfirmation" formControlName="confirmPassword">
-            <mat-hint *ngIf="registerForm.get('confirmPassword').errors">Password is required</mat-hint>
+            <input matInput type="password" placeholder="Adgangskodebekræftelse" formControlName="confirmPassword">
+            <mat-hint *ngIf="registerForm.get('confirmPassword').errors">Adgangskode er påkrævet</mat-hint>
         </mat-form-field>
 
-        <button mat-flat-button color="primary" [disabled]="!registerForm.valid" type="submit">Register</button>
+        <button mat-flat-button color="primary" [disabled]="!registerForm.valid" type="submit">Tilmeld</button>
     </div>
 </form>
