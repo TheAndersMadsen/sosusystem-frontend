@@ -12,12 +12,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule, MatButton} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
+import { LoginViewComponent } from './components/login/login-view.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginViewComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,7 @@ import {MatInputModule} from '@angular/material/input';
     BrowserAnimationsModule,
     MatToolbarModule,
     HttpClientModule,
+
 
     FormsModule,
     ReactiveFormsModule,
