@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubcategoryModalComponent } from './subcategory-modal.component';
+import { SubcategoryModalComponentHealth } from './subcategory-modal.component-health';
 
 describe('SubcategoryModalComponent', () => {
-  let component: SubcategoryModalComponent;
-  let fixture: ComponentFixture<SubcategoryModalComponent>;
+  let component: SubcategoryModalComponentHealth;
+  let fixture: ComponentFixture<SubcategoryModalComponentHealth>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SubcategoryModalComponent ]
+      declarations: [ SubcategoryModalComponentHealth ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SubcategoryModalComponent);
+    fixture = TestBed.createComponent(SubcategoryModalComponentHealth);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -12,7 +12,9 @@ import { CitizenGeneralInfoComponent } from './citizen-general-info/citizen-gene
 import { CitizenHealthConditionsComponent } from './citizen-health-conditions/citizen-health-conditions.component';
 import { FooterComponent } from './footer/footer.component';
 import { CitizenNavModalComponent } from './citizen-nav-modal/citizen-nav-modal.component';
-import { SubcategoryModalComponent } from './subcategory-modal/subcategory-modal.component';
+import { SubcategoryModalComponentHealth } from './subcategory-modal-health/subcategory-modal.component-health';
+import { CitizenFunctionAbilityComponent } from './citizen-funtion-ability/citizen-function-ability.component';
+import { SubcategoryModalFunctionComponent } from './subcategory-modal-function/subcategory-modal-function.component';
 
 
 
@@ -27,7 +29,9 @@ import { SubcategoryModalComponent } from './subcategory-modal/subcategory-modal
       CitizenHealthConditionsComponent,
       FooterComponent,
       CitizenNavModalComponent,
-      SubcategoryModalComponent,
+      SubcategoryModalComponentHealth,
+      CitizenFunctionAbilityComponent,
+      SubcategoryModalFunctionComponent,
   ],
   imports: [
     BrowserModule,
