@@ -1,7 +1,4 @@
 <app-nav-bar></app-nav-bar>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
 <main>
     <!---- Make container and card for title, text and search bar ----->
@@ -55,33 +52,7 @@
             </table>
         </div>
     </div>
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Mark Otto</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <button routerLink="citizen-general-info" type="submit" class="btn btn-primary btn-block">Generelle oplysninger</button>
-                        </div>
-                        <div class="mb-3">
-                            <button type="submit" class="btn btn-primary btn-block">Helbredstilstsande</button>
-                        </div>
-                        <div class="mb-3">
-                            <button type="submit" class="btn btn-primary btn-block">Funktionsevnetilstande</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                    <button type="submit" class="btn btn-danger btn-block" data-bs-dismiss="modal">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <app-citizen-nav-modal></app-citizen-nav-modal>
 </main>
 
 </body>

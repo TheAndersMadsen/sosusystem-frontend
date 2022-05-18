@@ -9,6 +9,11 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CitizenGeneralInfoComponent } from './citizen-general-info/citizen-general-info.component';
+import { CitizenHealthConditionsComponent } from './citizen-health-conditions/citizen-health-conditions.component';
+import { FooterComponent } from './footer/footer.component';
+import { CitizenNavModalComponent } from './citizen-nav-modal/citizen-nav-modal.component';
+import { SubcategoryModalComponent } from './subcategory-modal/subcategory-modal.component';
+
 
 
 @NgModule({
@@ -18,6 +23,11 @@ import { CitizenGeneralInfoComponent } from './citizen-general-info/citizen-gene
     LoginComponent,
     DashboardComponent,
     CitizenGeneralInfoComponent,
+    CitizenHealthConditionsComponent,
+      CitizenHealthConditionsComponent,
+      FooterComponent,
+      CitizenNavModalComponent,
+      SubcategoryModalComponent,
   ],
   imports: [
     BrowserModule,
