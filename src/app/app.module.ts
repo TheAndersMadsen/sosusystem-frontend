@@ -8,6 +8,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CitizenGeneralInfoComponent } from './citizen-general-info/citizen-general-info.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NavBarComponent,
     LoginComponent,
     DashboardComponent,
+    CitizenGeneralInfoComponent,
   ],
   imports: [
     BrowserModule,

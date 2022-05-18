@@ -11,7 +11,8 @@
             <h4 class="card-text"> Tryk eller søg på den ønskede borgere for at opdatere journalen</h4>
             <div class="input-group">
                 <div class="form-outline flex-fill">
-                    <input placeholder="Søg efter borger" type="search" id="form1" class="form-control form-control-lg" />
+                    <input placeholder="Søg efter borger" type="search" id="form1"
+                           class="form-control form-control-lg"/>
                 </div>
                 <button type="button" class="btn btn-outline-primary btn-lg">Søg</button>
             </div>
@@ -24,7 +25,7 @@
                     <th scope="col"><h3>Fornavn</h3></th>
                     <th scope="col"><h3>Efternavn</h3></th>
                     <th scope="col"><h3>Alder</h3></th>
-                    <th scope="col"><h3>Kommune</h3> </th>
+                    <th scope="col"><h3>Kommune</h3></th>
                     <th scope="col"><h3>Udvælg</h3></th>
                 </tr>
                 </thead>
@@ -34,14 +35,21 @@
                     <td><h4>Otto</h4></td>
                     <td><h4>82</h4></td>
                     <td><h4>Esbjerg Kommune</h4></td>
-                    <td><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="bd-example-modal-lg">Vælg</button></td>
+                    <td>
+                        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="bd-example-modal-lg">
+                            Vælg
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td><h4>Mark</h4></td>
                     <td><h4>Otto</h4></td>
                     <td><h4>82</h4></td>
                     <td><h4>Esbjerg Kommune</h4></td>
-                    <td><button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">Vælg</button></td>
+                    <td>
+                        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">Vælg
+                        </button>
+                    </td>
                 </tr>
                 </tbody>
             </table>
@@ -57,7 +65,7 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-primary btn-block">Generelle oplysninger</button>
+                            <button routerLink="citizen-general-info" type="submit" class="btn btn-primary btn-block">Generelle oplysninger</button>
                         </div>
                         <div class="mb-3">
                             <button type="submit" class="btn btn-primary btn-block">Helbredstilstsande</button>
