@@ -15,15 +15,16 @@
             </div>
         </div>
         <!----- The card which holds the table, where information is shown ------>
-        <div class="card">
+
+        <div  class="card">
             <table class="table table-hover">
                 <thead class="thead">
                 <tr>
-                    <th scope="col"><h3>Fornavn</h3></th>
-                    <th scope="col"><h3>Efternavn</h3></th>
-                    <th scope="col"><h3>Alder</h3></th>
-                    <th scope="col"><h3>Kommune</h3></th>
-                    <th scope="col"><h3>Udvælg</h3></th>
+                <th scope="col"><h3> Fornavn</h3></th>
+                <th scope="col"><h3>Efternavn</h3></th>
+                <th scope="col"><h3>Email</h3></th>
+                <th scope="col"><h3>Phone</h3></th>
+                <th scope="col"><h3>Udvælg</h3></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -33,26 +34,16 @@
                     <td><h4>82</h4></td>
                     <td><h4>Esbjerg Kommune</h4></td>
                     <td>
-                        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#citNavModal">
-                            Vælg
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td><h4>Mark</h4></td>
-                    <td><h4>Otto</h4></td>
-                    <td><h4>82</h4></td>
-                    <td><h4>Esbjerg Kommune</h4></td>
-                    <td>
-                        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#citNavModal">Vælg
+                        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#subNavModal">Vælg
                         </button>
                     </td>
                 </tr>
                 </tbody>
+                </div>
             </table>
         </div>
-    </div>
-    <app-citizen-nav-modal></app-citizen-nav-modal>
+        </div>
+    <app-nav-modal></app-nav-modal>
 </main>
 
 </body>
