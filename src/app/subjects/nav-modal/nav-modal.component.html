@@ -3,19 +3,19 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Mark Otto</h5>
+                <h5 class="modal-title"> {{selectedFirstName}} {{selectedLastName}}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
                 <form>
                     <div class="mb-3">
-                        <button routerLink="../subjects/general-information" type="btn-primary" data-bs-dismiss="modal" class="btn btn-primary btn-block">Generelle oplysninger</button>
+                        <button routerLink="../subjects/{{selectedId}}/general-information" type="btn-primary" data-bs-dismiss="modal" class="btn btn-primary btn-block">Generelle oplysninger</button>
                     </div>
                     <div class="mb-3">
-                        <button routerLink="../subjects/health-conditions" type="submit"  data-bs-dismiss="modal" class="btn btn-primary btn-block">Helbredstilstsande</button>
+                        <button routerLink="../subjects/{{selectedId}}/health-conditions" type="submit"  data-bs-dismiss="modal" class="btn btn-primary btn-block">Helbredstilstsande</button>
                     </div>
                     <div class="mb-3">
-                        <button routerLink="../subjects/function-abilities" type="submit" data-bs-dismiss="modal" class="btn btn-primary btn-block">Funktionsevnetilstande</button>
+                        <button routerLink="../subjects/{{selectedId}}/function-abilities" type="submit" data-bs-dismiss="modal" class="btn btn-primary btn-block">Funktionsevnetilstande</button>
                     </div>
                 </form>
             </div>

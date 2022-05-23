@@ -10,6 +10,7 @@ const routes: Routes = [
     loadChildren: () => import('./subjects/subjects.module').then(m => m.SubjectsModule )
   }
 
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

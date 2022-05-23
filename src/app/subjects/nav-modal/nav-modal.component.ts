@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { DashboardComponent } from "../dashboard/dashboard.component";
+import {SubjectDto} from "../shared/subject.dto";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-nav-modal',
@@ -7,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavModalComponent implements OnInit {
 
+  @Input() selectedFirstName : string;
+  @Input() selectedId : string;
+  @Input() selectedLastName : string;
   constructor() { }
+
 
   ngOnInit(): void {
   }
