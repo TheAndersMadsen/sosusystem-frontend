@@ -9,19 +9,15 @@ import {SubjectService} from "../shared/subject.service";
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  $subjects: Observable<SubjectList> | undefined;
+  subjects$: any;
   $error: string | undefined;
 
   constructor(private _service: SubjectService) { }
 
   ngOnInit(): void {
-    this.$subjects = this._service.getSubjects()
-        .pipe(
-            catchError(errMsg => {
-              this.$error = (errMsg ? errMsg.statusText : errMsg) as string;
-              return throwError(errMsg);
-            })
-        )
+    this._service.getSubjects().subscribe((result) => {
+        this.subjects$ = result
+    })
   }
 
 }
