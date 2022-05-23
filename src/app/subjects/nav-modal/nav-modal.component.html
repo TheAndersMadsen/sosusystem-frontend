@@ -9,7 +9,7 @@
             <div class="modal-body">
                 <form>
                     <div class="mb-3">
-                        <button routerLink="../general-information" type="btn-primary" data-bs-dismiss="modal" class="btn btn-primary btn-block">Generelle oplysninger</button>
+                        <button (click)="onCLickGI(selectedId)" type="btn-primary" data-bs-dismiss="modal" class="btn btn-primary btn-block">Generelle oplysninger</button>
                     </div>
                     <div class="mb-3">
                         <button routerLink="../health-conditions" type="submit"  data-bs-dismiss="modal" class="btn btn-primary btn-block">Helbredstilstsande</button>

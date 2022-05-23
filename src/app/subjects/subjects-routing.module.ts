@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: 'function-abilities', component: FunctionAbilityComponent },
   { path: 'general-information', component: GeneralInfoComponent },
   { path: 'health-conditions', component: HealthConditionsComponent },
-  { path: 'dashboard', component: DashboardComponent}
+  { path: 'dashboard', component: DashboardComponent},
+  { path: 'general-information/:id', component: GeneralInfoComponent },
 
 
 ];
