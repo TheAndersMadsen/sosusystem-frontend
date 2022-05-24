@@ -17,6 +17,11 @@ export class GeneralInfoComponent implements OnInit {
   generalDto : GeneralDto
   newSubject : SubjectDto
 
+
+
+
+
+
   constructor(private _service: SubjectService, private _route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -29,7 +34,8 @@ export class GeneralInfoComponent implements OnInit {
   }
 
   clickOnSave(){
-    this.subject = this.newSubject
+
+    this.subject.firstName = 'dillerMand';
     this._service.updateSubject(this.selectedId,this.subject).subscribe();
     //this._service.updateSubjectGeneralInformation(this.selectedId,this.subject.general._id,this.generalDto)
   }
