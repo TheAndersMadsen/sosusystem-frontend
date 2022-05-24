@@ -23,6 +23,13 @@ export class GeneralInfoComponent implements OnInit {
     lastName: new FormControl('', Validators.required),
     phone: new FormControl('', Validators.required),
     email: new FormControl('', Validators.required),
+    address: new FormGroup({
+      address: new FormControl('', Validators.required),
+      street: new FormControl('', Validators.required),
+      city: new FormControl('', Validators.required),
+      postCode: new FormControl('', Validators.required)
+    }),
+
   })
 
 
@@ -47,10 +54,7 @@ export class GeneralInfoComponent implements OnInit {
 
     if (this.selectedId) {
       let subject = this.updateForm.value as SubjectDto;
-
-
-      this.subject.firstName = 'Dillersupermand';
-      this._service.updateSubject(this.selectedId,this.subject).subscribe();
+      this._service.updateSubject(this.selectedId,subject).subscribe();
       //this._service.updateSubjectGeneralInformation(this.selectedId,this.subject.general._id,this.generalDto)
     }
 
