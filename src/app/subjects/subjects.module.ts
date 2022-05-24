@@ -11,6 +11,7 @@ import {NavBarComponent} from "../nav-bar/nav-bar.component";
 import {SubcategoryModalComponentHealth} from "../subcategory-modal-health/subcategory-modal.component-health";
 import {SubcategoryModalFunctionComponent} from "../subcategory-modal-function/subcategory-modal-function.component";
 import {DashboardComponent} from "./dashboard/dashboard.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -29,6 +30,7 @@ import {DashboardComponent} from "./dashboard/dashboard.component";
   imports: [
     CommonModule,
     SubjectsRoutingModule,
+      ReactiveFormsModule
 
 
   ]
