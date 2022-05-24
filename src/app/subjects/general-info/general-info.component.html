@@ -2,9 +2,9 @@
 
 <!---- Container and labels with inputs, put into rows, for all generel information ---->
 <div class="container rounded bg-white mt-5 mb-5">
-    <div class="row">
+    <div class="row" *ngIf="subject != null">
         <div class="col-md-3 border-right">
-            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://flyclipart.com/thumb2/profile-icon-png-black-196391.png"><span class="font-weight-bold">Anders</span><span class="text-black-50">AndersAndersen@gmail.com</span><span> </span></div>
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://flyclipart.com/thumb2/profile-icon-png-black-196391.png"><span class="font-weight-bold">{{subject.firstName}} {{subject.lastName}}</span><span class="text-black-50">{{subject.email}}</span><span> </span></div>
         </div>
         <div class="col-md-5 border-right">
             <div class="p-3 py-5">
@@ -12,15 +12,15 @@
                     <h4 class="text-right" style="color: #487288 ">Generelle Oplysninger</h4>
                 </div>
                 <div class="row mt-2">
-                    <div class="col-md-6"><label class="labels"></label><input type="text" class="form-control" placeholder="Indtast fornavn" value=""></div>
-                    <div class="col-md-6"><label class="labels">Efternavn</label><input type="text" class="form-control" value="" placeholder="Indtast efternavn"></div>
+                    <div class="col-md-6"><label class="labels">Navn</label><input type="text" class="form-control" placeholder="{{subject.firstName}}" value=""></div>
+                    <div class="col-md-6"><label class="labels">Efternavn</label><input type="text" class="form-control" value="" placeholder="{{subject.lastName}}"></div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">Telefon nummer</label><input type="text" class="form-control" placeholder="Indtast telefonnummer" value=""></div>
-                    <div class="col-md-12"><label class="labels">Adresse</label><input type="text" class="form-control" placeholder="Indtast addresse" value=""></div>
-                    <div class="col-md-12"><label class="labels">Postnummer</label><input type="text" class="form-control" placeholder="Indtast postnummer" value=""></div>
-                    <div class="col-md-12"><label class="labels">By</label><input type="text" class="form-control" placeholder="Indtast by" value=""></div>
-                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="Indtast email" value=""></div>
+                    <div class="col-md-12"><label class="labels">Telefon nummer</label><input type="text" class="form-control" placeholder="{{subject.phone}}" value=""></div>
+                    <div class="col-md-12"><label class="labels">Adresse</label><input type="text" class="form-control" placeholder="{{subject.address.street}}" value=""></div>
+                    <div class="col-md-12"><label class="labels">Postnummer</label><input type="text" class="form-control" placeholder="{{subject.address.postCode}}" value=""></div>
+                    <div class="col-md-12"><label class="labels">By</label><input type="text" class="form-control" placeholder="{{subject.address.city}}" value=""></div>
+                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="{{subject.email}}" value=""></div>
                 </div>
                 <div class="row mt-3">
                     <h4 style="color: #487288 ">Omgivelsesfaktorer</h4>
