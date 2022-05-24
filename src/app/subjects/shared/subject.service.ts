@@ -23,8 +23,13 @@ export class SubjectService {
   return this._http.get<SubjectDto>(environment.api + '/subjects/' + id)
   }
 
+  updateSubject(subjectId: string, subjectDto: SubjectDto): Observable<SubjectDto> {
+    return this._http.patch<SubjectDto>(environment.api + '/subjects/' + subjectId, subjectDto);
+  }
 
-
+  updateSubjectGeneralInformation(subjectId: string, generalInformationId: string, generalDto: GeneralDto): Observable<GeneralDto> {
+    return this._http.patch<GeneralDto>(environment.api + '/subjects/' + subjectId + '/general-information/' + generalInformationId, generalDto);
+  }
 
 }
 

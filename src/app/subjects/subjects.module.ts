@@ -13,6 +13,7 @@ import {SubcategoryModalFunctionComponent} from "../subcategory-modal-function/s
 import {DashboardComponent} from "./dashboard/dashboard.component";
 
 
+
 @NgModule({
   declarations: [
     FunctionAbilityComponent,
@@ -28,6 +29,7 @@ import {DashboardComponent} from "./dashboard/dashboard.component";
   imports: [
     CommonModule,
     SubjectsRoutingModule,
+
 
   ]
 })

@@ -12,15 +12,15 @@
                     <h4 class="text-right" style="color: #487288 ">Generelle Oplysninger</h4>
                 </div>
                 <div class="row mt-2">
-                    <div class="col-md-6"><label class="labels">Navn</label><input type="text" class="form-control" placeholder="{{subject.firstName}}" value=""></div>
-                    <div class="col-md-6"><label class="labels">Efternavn</label><input type="text" class="form-control" value="" placeholder="{{subject.lastName}}"></div>
+                    <div class="col-md-6"><label class="labels">Navn</label><input type="text" class="form-control" placeholder="Fornavn" value="{{subject.firstName}}"></div>
+                    <div class="col-md-6"><label class="labels">Efternavn</label><input type="text" class="form-control" value="{{subject.lastName}}" placeholder="Efternavn"></div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">Telefon nummer</label><input type="text" class="form-control" placeholder="{{subject.phone}}" value=""></div>
-                    <div class="col-md-12"><label class="labels">Adresse</label><input type="text" class="form-control" placeholder="{{subject.address.street}}" value=""></div>
-                    <div class="col-md-12"><label class="labels">Postnummer</label><input type="text" class="form-control" placeholder="{{subject.address.postCode}}" value=""></div>
-                    <div class="col-md-12"><label class="labels">By</label><input type="text" class="form-control" placeholder="{{subject.address.city}}" value=""></div>
-                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="{{subject.email}}" value=""></div>
+                    <div class="col-md-12"><label class="labels">Telefon nummer</label><input type="text" class="form-control" placeholder="Telefon Nummer" value="{{subject.phone}}"></div>
+                    <div class="col-md-12"><label class="labels">Adresse</label><input type="text" class="form-control" placeholder="Adresse" value="{{subject.address.street}}"></div>
+                    <div class="col-md-12"><label class="labels">Postnummer</label><input type="text" class="form-control" placeholder="Post Nummer" value="{{subject.address.postCode}}"></div>
+                    <div class="col-md-12"><label class="labels">By</label><input type="text" class="form-control" placeholder="By" value="{{subject.address.city}}"></div>
+                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="Email" value="{{subject.email}}"></div>
                 </div>
                 <div class="row mt-3">
                     <h4 style="color: #487288 ">Omgivelsesfaktorer</h4>
@@ -28,7 +28,7 @@
                     <div class="col-md-12"><label class="labels">Boligens indretning</label><input type="text" class="form-control" placeholder="Beskrivelse" value=""></div>
                     <div class="col-md-12"><label class="labels">Netværk</label><input type="text" class="form-control" placeholder="Beskrivelse" value=""></div>
                 </div>
-                <div class="mt-5 text-center" style="padding-bottom: 15%"><button class="btn btn-primary profile-button" type="button" data-bs-toggle="modal" data-bs-target="#subNavModal">Save Profile</button></div>
+                <div class="mt-5 text-center" style="padding-bottom: 15%"><button class="btn btn-primary profile-button" (click)="clickOnSave()" type="button" data-bs-toggle="modal" data-bs-target="#subNavModal">Save Profile</button></div>
             </div>
         </div>
         <div class="col-md-4">
